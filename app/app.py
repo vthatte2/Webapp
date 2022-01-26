@@ -72,7 +72,7 @@ def crop_recommend():
     title = 'Harvestify - Crop Recommendation'
     return render_template('crop.html', title=title)
 
-# render fertilizer recommendation form page
+
 
 
 
@@ -99,7 +99,7 @@ def crop_prediction():
         ph = float(request.form['ph'])
         rainfall = float(request.form['rainfall'])
 
-        # state = request.form.get("stt")
+     
         city = request.form.get("city")
 
         if weather_fetch(city) != None:
@@ -114,7 +114,7 @@ def crop_prediction():
 
             return render_template('try_again.html', title=title)
 
-# render fertilizer recommendation result page
+
 
 
 
